@@ -86,15 +86,105 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-nav {
-  display: flex;
-  justify-content: center;
-  font-size: 5vh;
+html {
+  font-size: 100%;
 }
-.title-container {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg");
+body {
+  color: #222831;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
 }
-.artists-container {
+a {
+  color: #222831;
+}
+a:hover {
+  color: #eaac9d;
+}
+h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.btn {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  border: 1px solid #888888;
+  color: #222831;
+  text-decoration: none;
+  line-height: 3rem;
+  padding: 0 3rem;
+  transition: background-color 0.4s ease;
+}
+img {
+  transition: opacity 0.4s ease;
+}
+img:hover {
+  opacity: 0.8;
+}
+header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #888888;
+}
+@media (min-width: 1024px) {
+  header {
+    border: 0;
+  }
+}
+header nav {
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  header nav {
+    margin-top: 2.5rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+header nav a {
+  line-height: 6rem;
+  text-decoration: none;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  header nav a {
+    line-height: 1;
+    margin-right: 1.25rem;
+    padding-right: 1.25rem;
+    border-right: 1px solid #888888;
+  }
+  header nav a:last-child {
+    border-right: 0;
+  }
+}
+header nav a.active {
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+  }
+}
+#cta {
+  background-image: url("../assets/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 2.5rem;
+  transition: opacity 0.4s ease;
+}
+#cta:hover {
+  opacity: 0.8;
+}
+#cta h2 {
+  text-align: center;
 }

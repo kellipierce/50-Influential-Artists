@@ -1,0 +1,18 @@
+.create-button(@bck-color: #f9f9f9; @radius: @button-border-radius) {
+    background-color: @bck-color;
+    border-radius: @radius;
+    border: 1px solid #888888;
+    color: @gray-black;
+    text-decoration: none;
+    line-height: 3rem;
+    padding: 0 3rem;
+    .smooth-transition(background-color);   
+}
+
+.add-border(@location) {
+    border-@{location}: 1px solid @light-gray;
+}
+
+.smooth-transition(@property) {
+    transition: @property 0.4s ease;
+}
